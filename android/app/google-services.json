@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350566207237",
+    "project_id": "projek-ta-7c085",
+    "storage_bucket": "projek-ta-7c085.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350566207237:android:3a0410c1870d1c3896716c",
+        "android_client_info": {
+          "package_name": "com.example.projek_ta_smarthome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4WMh1CjDhbj3wkcJzQ2wSlQ_nQW-jHco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
