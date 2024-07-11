@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:projek_ta_smarthome/main.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -18,7 +19,11 @@ class _LoginScreenState extends State<LoginScreen> {
       );
       if (credential.user != null) {
         print('User signed in successfully!');
-        // Navigate to the next screen if needed
+        // Navigate to the next screen
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => MyHomePage()),
+        );
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
