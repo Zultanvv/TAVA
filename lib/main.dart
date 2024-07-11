@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:projek_ta_smarthome/login.dart';
+import 'package:projek_ta_smarthome/voice.dart';
 import 'firebase_options.dart';
 
 void main() async{
@@ -206,17 +207,7 @@ class ControlButton extends StatelessWidget {
   }
 }
 
-class VoiceControlScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Voice Control Screen',
-        style: TextStyle(fontSize: 24),
-      ),
-    );
-  }
-}
+
 
 class InfoScreen extends StatelessWidget {
   @override
