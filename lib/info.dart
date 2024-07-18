@@ -32,6 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
@@ -66,14 +67,16 @@ class HomeScreen extends StatelessWidget {
             icon: Icon(Icons.home),
             label: '',
           ),
-          BottomNavigationBarItem(
+            BottomNavigationBarItem(
             icon: Icon(Icons.mic),
-            label: '',
+            label: 'VOICE',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             label: '',
           ),
+
+        
         ],
         currentIndex: 0,
         selectedItemColor: Colors.blue,

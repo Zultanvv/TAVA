@@ -35,6 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
       _showErrorDialog('Cek email dan password anda dengan benar!');
       return;
     }
+    
 
     try {
       final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
@@ -44,9 +45,10 @@ class _LoginScreenState extends State<LoginScreen> {
       if (credential.user != null) {
         print('User signed in successfully!');
         // Navigate to the next screen
-        Navigator.pushReplacement(
+        Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(builder: (context) => MyHomePage()),
+          (Route<dynamic> route) => false,
         );
       }
     } on FirebaseAuthException catch (e) {
@@ -67,6 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
         print('User is signed in!');
       }
     });
+    
 
     return Scaffold(
       body: Container(
